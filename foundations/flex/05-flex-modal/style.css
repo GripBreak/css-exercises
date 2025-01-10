@@ -20,6 +20,11 @@ body {
   width: 480px;
   border-radius: 10px;
   box-shadow: 2px 4px 16px rgba(0,0,0,.2);
+
+  /*my solution*/
+  display: flex;
+  padding: 20px;
+  gap: 20px;
 }
 
 .icon {
@@ -33,6 +38,36 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+
+  /*my solution*/
+  flex-shrink: 0;
+}
+
+/*my solution - flexbox item that encapsulates the entire right column of the window*/
+.right {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/*my solution - flexbox item that encapsulates right header and button*/
+.r-topline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header {
+  /*my solution - add text styling to header*/
+  font-weight: bold;
+  font-size: large;
+}
+
+/*my soltion- flexbox item that encapsulates the bottom buttons*/
+.r-bottom{
+  display: flex;
+  gap: 5px;
 }
 
 .close-button {
